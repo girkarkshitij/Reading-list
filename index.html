@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Reading List</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="main-logo" class="center">
+                <h1>Reading List</h1>
+            </div>
+
+            <form action="#" autocomplete="on">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required />
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required />
+                <select name="status" id="status">
+                    <option value="">Please Choose an Option</option>
+                    <option value="read">Read</option>
+                    <option value="currently-reading">Currently Reading</option>
+                    <option value="to-read">To Read</option>
+                </select>
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" id="isbn" required />
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; Kshitij, 2020</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
