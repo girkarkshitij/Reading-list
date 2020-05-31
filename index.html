@@ -21,20 +21,64 @@
                 <h1>Reading List</h1>
             </div>
 
-            <form action="#" autocomplete="on">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" required />
-                <label for="author">Author</label>
-                <input type="text" name="author" id="author" required />
-                <select name="status" id="status">
-                    <option value="">Please Choose an Option</option>
-                    <option value="read">Read</option>
-                    <option value="currently-reading">Currently Reading</option>
-                    <option value="to-read">To Read</option>
-                </select>
-                <label for="isbn">ISBN</label>
-                <input type="text" name="isbn" id="isbn" required />
-            </form>
+            <div class="form-container">
+                <form action="#" autocomplete="on">
+                    <ul class="flex-outer">
+                        <li>
+                            <label for="title">Title</label>
+                            <input
+                                type="text"
+                                name="title"
+                                id="title"
+                                placeholder="Enter the title here"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="author">Author</label>
+                            <input
+                                type="text"
+                                name="author"
+                                id="author"
+                                placeholder="Enter the name of the author here"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="isbn">ISBN</label>
+                            <input
+                                type="text"
+                                name="isbn"
+                                id="isbn"
+                                placeholder="Enter the ISBN here"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <input type="submit" class="btn" value="Add Book" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>India After Gandhi</td>
+                        <td>Ramchandra Guha</td>
+                        <td>456749494949</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <footer>
