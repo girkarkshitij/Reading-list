@@ -26,13 +26,13 @@ body {
     text-align: center;
 }
 
-.flex-outer{
+.flex-outer {
     margin: 0 auto;
     max-width: 800px;
     list-style-type: none;
 }
 
-.flex-outer li{
+.flex-outer li {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -40,33 +40,47 @@ body {
     justify-content: space-between;
 }
 
-.flex-outer li label{
+.flex-outer li label {
     margin: 10px;
 }
 
-.flex-outer li input{
+.flex-outer li input {
     width: 40%;
 }
 
-.btn{
+.btn {
     background: var(--color-1);
     flex: auto;
     padding: 10px;
 }
 
-table{
+table {
     background: var(--color-2);
     width: 100%;
     margin-top: 100px;
     border-collapse: collapse;
 }
 
-table thead th, 
-table tbody td{
+table thead th,
+table tbody td {
     padding: 20px;
+    border: 3px solid black;
 }
 
-footer{
-    margin:30px;
+.btn-delete{
+    text-decoration: none;
+    color: red;
+}
+
+footer {
+    margin: 30px;
     text-align: center;
+}
+
+.red{
+    background: #df0f0f;
+}
+
+.green{
+    background: #1a9709;
 }
