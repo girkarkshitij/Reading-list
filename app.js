@@ -66,8 +66,7 @@ class Store {
     static removeBook(target) {
         const books = Store.getBooks();
         books.forEach((book, index) => {
-            if(book.isbn === target)
-                books.splice(index, 1);
+            if (book.isbn === target) books.splice(index, 1);
         });
         localStorage.setItem('books', JSON.stringify(books));
     }
@@ -99,7 +98,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 
 //Event : Remove a book
 document.querySelector('#book-list').addEventListener('click', (e) => {
-    const row = e.target.parentElement.parentElement.querySelector('.isbn').innerHTML;
+    const row = e.target.parentElement.parentElement.querySelector('.isbn')
+        .innerHTML;
     Store.removeBook(row);
     UI.deleteBook(e.target);
     UI.showAlert('Book removed successfully', 'green');

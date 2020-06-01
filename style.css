@@ -67,7 +67,7 @@ table tbody td {
     border: 3px solid black;
 }
 
-.btn-delete{
+.btn-delete {
     text-decoration: none;
     color: red;
 }
@@ -77,10 +77,10 @@ footer {
     text-align: center;
 }
 
-.red{
+.red {
     background: #df0f0f;
 }
 
-.green{
+.green {
     background: #1a9709;
 }
